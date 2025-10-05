@@ -1,1 +1,3 @@
-# Data_Leak
+Story: A workstation inside your network was flagged for suspicious outbound HTTP traffic after an exploit attempt was detected against one of your internal services. You have been handed a PCAP of the incident. Analysts think the machine may have downloaded a second-stage payload and started beaconing to an external command-and-control (C2) server — but the data seems obfuscated.
+
+Your Tasks: Detect the attack Identify the initial exploit attempt in the capture (how the attacker triggered it and any suspicious indicators). Analyze the C2 channels Two possible C2 servers appear in the PCAP. Determine which one is the real C2 channel and which one is a decoy. Reconstruct the stolen data The beacon traffic contains an encrypted payload. Using only information visible in the capture, decrypt the data and recover the exfiltrated secret. Validate your reconstruction by checking the provided integrity mechanism inside the same C2 flow.
